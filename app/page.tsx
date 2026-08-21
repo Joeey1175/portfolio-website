@@ -64,7 +64,7 @@ export default function Home() {
               TURNING DATA INTO STORIES THAT MOVE BUSINESS FORWARD.
             </h1>
             <div className="hero-actions" aria-label="Portfolio highlights">
-              <a href="#services">Explore Services</a>
+              <a href="/Zeying_Xu_Resume.pdf" download>Download CV</a>
               <span>Available for analytics, research, and storytelling work</span>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function Home() {
             </div>
             <div>
               <span>Phone Number</span>
-              <a href="tel:+18582677260">+1 (858)2677260</a>
+              <a href="tel:+18582677260">+1 (858)267-7260</a>
             </div>
           </div>
 
@@ -368,7 +368,7 @@ export default function Home() {
                     ["E", 58],
                   ].map(([publisher, value]) => (
                     <div className="bar-row" key={publisher}>
-                      <span>Publisher {publisher}</span>
+                      <span>{publisher}</span>
                       <i
                         style={{ "--w": `${Number(value) / 5}%` } as CSSProperties}
                       />
@@ -670,6 +670,19 @@ export default function Home() {
               <a href="#case-study-spotify-detail">View Case Study</a>
             </div>
           </article>
+
+          <article id="case-study-churn" className="case-card case-card-churn">
+            <div className="case-image-wrap">
+              <img
+                src="/case-study/customer-churn-prediction-cover.png"
+                alt="Customer churn prediction machine learning workflow"
+              />
+            </div>
+            <div className="case-card-footer">
+              <h3>Customer Churn Prediction &amp; Machine Learning Analysis</h3>
+              <a href="#case-study-churn-detail">View Case Study</a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -907,6 +920,153 @@ export default function Home() {
                 <img src="/case-study/spotify-dashboard-interaction.png" alt="Song type dashboard filter interaction" />
               </figure>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="case-study-churn-detail"
+        className="case-detail-section"
+        aria-labelledby="churn-detail-title"
+      >
+        <div className="case-detail-modal">
+          <a className="case-detail-close" href="#case-study" aria-label="Back to case studies">×</a>
+
+          <div className="case-detail-hero">
+            <h2 id="churn-detail-title">Customer Churn Prediction &amp; Machine Learning Analysis</h2>
+            <p>Predicting customer churn and identifying behavioral drivers to support customer retention decisions.</p>
+            <div className="case-detail-labels" aria-label="Project tags">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Machine Learning</span>
+              <span>EDA</span>
+              <span>Feature Engineering</span>
+            </div>
+          </div>
+
+          <div className="case-detail-cover">
+            <img
+              src="/case-study/customer-churn-prediction-cover.png"
+              alt="Customer churn prediction machine learning workflow cover"
+            />
+          </div>
+
+          <section className="case-overall" aria-labelledby="churn-problem-title">
+            <p className="eyebrow" id="churn-problem-title">Business Problem</p>
+            <p>
+              Customer churn can directly affect retention and long-term customer value.
+              The goal of this project was to build a predictive model that identifies
+              customers at risk of churn while uncovering the behavioral and service-related
+              factors associated with attrition.
+            </p>
+          </section>
+
+          <div className="case-detail-metrics churn-detail-metrics" aria-label="Customer churn analysis project metrics">
+            <div className="numbers-badge">Numbers</div>
+            <article className="highlight-metric">
+              <strong><span className="metric-value" data-count="7999">0</span></strong>
+              <span>Training Records</span>
+            </article>
+            <article className="highlight-metric">
+              <strong><span className="metric-value" data-count="1000">0</span></strong>
+              <span>Prediction Records</span>
+            </article>
+            <article className="highlight-metric">
+              <strong><span className="metric-value" data-count="12">0</span></strong>
+              <span>Variables</span>
+            </article>
+            <article className="highlight-metric">
+              <strong><span className="metric-value" data-count="14.2" data-decimals="1">0</span><span className="metric-suffix">%</span></strong>
+              <span>Churn Rate</span>
+            </article>
+          </div>
+
+          <div className="case-feature-list" aria-label="Customer churn model feature highlights">
+            <h3 className="case-feature-group-title">Exploratory Analysis &amp; Churn Drivers</h3>
+
+            <article className="case-feature-row movie-feature-wide">
+              <figure className="case-feature-image movie-feature-grid churn-two-chart-grid">
+                <img src="/case-study/churn-service-features-support.png" alt="Features used and support tickets by churn charts" />
+                <img src="/case-study/churn-service-logins-time.png" alt="Logins and time in app by churn charts" />
+              </figure>
+              <div className="case-feature-copy">
+                <p className="eyebrow">Feature 01</p>
+                <h3>Service Experience &amp; Customer Churn</h3>
+                <p>Churned customers tend to submit more support tickets and report lower satisfaction scores, suggesting that service friction and customer satisfaction are closely associated with attrition.</p>
+              </div>
+            </article>
+
+            <article className="case-feature-row movie-feature-wide churn-segments-row">
+              <div className="case-feature-copy">
+                <p className="eyebrow">Feature 02</p>
+                <h3>Churn Patterns Across Customer Segments</h3>
+                <p>Churn varies across customer segments. Basic-plan customers show higher churn than Pro and Enterprise users, while Retail, Manufacturing, and LATAM also demonstrate relatively higher attrition rates.</p>
+              </div>
+              <figure className="case-feature-image movie-feature-grid churn-three-chart-grid">
+                <img src="/case-study/churn-rate-industry.png" alt="Churn rate by industry chart" />
+                <img src="/case-study/churn-rate-plan-type.png" alt="Churn rate by plan type chart" />
+                <img src="/case-study/churn-rate-region.png" alt="Churn rate by region chart" />
+              </figure>
+            </article>
+
+            <article className="case-feature-row movie-feature-wide">
+              <figure className="case-feature-image">
+                <img src="/case-study/churn-correlation-matrix.png" alt="Correlation matrix of numeric customer churn variables" />
+              </figure>
+              <div className="case-feature-copy">
+                <p className="eyebrow">Feature 03</p>
+                <h3>Feature Relationships &amp; Correlation</h3>
+                <p>Engagement variables such as logins, time in app, and features used are strongly correlated, indicating overlapping behavioral signals. Satisfaction is negatively associated with both support tickets and churn, reinforcing customer experience as an important retention indicator.</p>
+              </div>
+            </article>
+
+            <h3 className="case-feature-group-title">Data Preparation &amp; Feature Engineering</h3>
+
+            <div className="churn-text-modules" aria-label="Customer churn data preparation notes">
+              <article className="case-feature-copy">
+                <p className="eyebrow">Preparation</p>
+                <h3>Data Preparation</h3>
+                <p>The dataset was cleaned and transformed to prepare it for machine learning, including missing-value treatment, numerical transformations, categorical encoding, and feature engineering.</p>
+              </article>
+              <article className="case-feature-copy">
+                <p className="eyebrow">Modeling Input</p>
+                <h3>Model-Ready Dataset</h3>
+                <p>After preprocessing, the dataset retained the original observations while becoming fully numerical and free of missing values, creating a consistent input structure for downstream modeling and evaluation.</p>
+              </article>
+            </div>
+
+            <h3 className="case-feature-group-title">Machine Learning Pipeline</h3>
+
+            <article className="case-feature-row movie-feature-wide">
+              <figure className="case-feature-image">
+                <img src="/case-study/customer-churn-prediction-cover.png" alt="End-to-end customer churn machine learning pipeline" />
+              </figure>
+              <div className="case-feature-copy">
+                <p className="eyebrow">Pipeline</p>
+                <h3>End-to-End Machine Learning Pipeline</h3>
+                <p>Built an end-to-end machine learning pipeline to automate data preprocessing, model training, threshold optimization, batch prediction, and cloud-based output storage.</p>
+              </div>
+            </article>
+
+            <h3 className="case-feature-group-title">Model Performance</h3>
+
+            <div className="churn-performance-modules" aria-label="Customer churn model performance notes">
+              <article className="case-feature-copy">
+                <p className="eyebrow">Performance</p>
+                <h3>Moderate F1 Performance</h3>
+                <p>The final model achieved a moderate F1-score, reflecting the challenge of predicting churn under class imbalance and a limited feature set.</p>
+              </article>
+              <article className="case-feature-copy">
+                <p className="eyebrow">Threshold</p>
+                <h3>Improved Recall Through Threshold Tuning</h3>
+                <p>Adjusting the classification threshold improved recall without severely sacrificing precision, helping the model identify more at-risk customers.</p>
+              </article>
+              <article className="case-feature-copy">
+                <p className="eyebrow">Impact</p>
+                <h3>Why It Matters</h3>
+                <p>The results highlight the importance of evaluating churn models beyond accuracy and using threshold optimization to improve minority-class detection.</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -1355,9 +1515,13 @@ export default function Home() {
 
             (() => {
               const counters = document.querySelectorAll('.metric-value');
-              const format = (value) => new Intl.NumberFormat('en-US').format(value);
+              const format = (value, decimals = 0) => new Intl.NumberFormat('en-US', {
+                minimumFractionDigits: decimals,
+                maximumFractionDigits: decimals,
+              }).format(value);
               const setValue = (el, value) => {
-                el.textContent = format(value);
+                const decimals = Number(el.dataset.decimals || 0);
+                el.textContent = format(value, decimals);
               };
               const animate = (el) => {
                 const target = Number(el.dataset.count || 0);
@@ -1367,7 +1531,9 @@ export default function Home() {
                 const tick = (now) => {
                   const progress = Math.min((now - start) / duration, 1);
                   const eased = 1 - Math.pow(1 - progress, 3);
-                  setValue(el, Math.round(target * eased));
+                  const decimals = Number(el.dataset.decimals || 0);
+                  const factor = 10 ** decimals;
+                  setValue(el, Math.round(target * eased * factor) / factor);
                   if (progress < 1 && el.dataset.running === 'true') {
                     requestAnimationFrame(tick);
                   } else {

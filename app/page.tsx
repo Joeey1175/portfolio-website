@@ -1087,7 +1087,7 @@ export default function Home() {
         <div className="highlights-banner" aria-label="Professional highlights metrics">
           <div className="numbers-badge">Numbers</div>
           <article className="highlight-metric">
-            <strong><span className="metric-value" data-count="45">0</span><span className="metric-suffix">+</span></strong>
+            <strong><span className="metric-value" data-count="47">0</span><span className="metric-suffix">+</span></strong>
             <span>Monthly Reports</span>
           </article>
           <article className="highlight-metric">

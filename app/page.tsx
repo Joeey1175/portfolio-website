@@ -64,7 +64,7 @@ export default function Home() {
               TURNING DATA INTO STORIES THAT MOVE BUSINESS FORWARD.
             </h1>
             <div className="hero-actions" aria-label="Portfolio highlights">
-              <a href="/Zeying_Xu_Resume.pdf" download>Download CV</a>
+              <a href="/Zeying_Xu_Resume.pdf">View CV</a>
               <span>Available for analytics, research, and storytelling work</span>
             </div>
           </div>
